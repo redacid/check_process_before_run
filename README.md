@@ -3,7 +3,7 @@
 Результатом должно быть исполнение index.php с параметром и не допустить одновременного исполнения нескольких экземпляров
 
 ### Цепочка исполнения 
-cron -> /scripts/cron/cron_tps_check.sh testcommand id1 -> Проверка запущен ли процесс, если нет то -> index.php testcommand 
+cron -> /scripts/cron/cron_tps_check.sh testcommand id1 -> Проверка запущен ли процесс, если нет - то -> index.php testcommand 
 
 ### Пример cron задач
 ```
