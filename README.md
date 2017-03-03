@@ -13,6 +13,7 @@
 
 Пример лога работы
 <code>
+
  2017-03-03 14:16:01 [RES ] testcommand - command testcommand successfuly completed, timeout 76
  
  2017-03-03 14:17:01 [RES ] testcommand4 - command testcommand4 successfuly completed, timeout 41
