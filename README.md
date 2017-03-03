@@ -1,5 +1,13 @@
-# check_process_before_run
-Не допускаем повторного запуска скрипта из cron
+
+# Не допускаем повторного запуска скрипта из cron
+Результатом должно быть исполнение index.php с параметром и не допустить оновременного исполнения нескольких єкземпляров
+
+
+## Цепочка исполнения 
+
+cron -> /scripts/cron/cron_tps_check.sh testcommand id1 -> Проверка запущен ли процесс, если нет то -> index.php testcommand 
+
+### Пример cron задач
 
 */1 *   * * *   root    /scripts/cron/cron_tps_check.sh testcommand id1
 
@@ -11,8 +19,7 @@
 
 2-й параметр id1,id2... должен быть уникальным, по нему отслеживается процесс
 
-Пример лога работы
-<code>
+### Пример лога работы
 
  2017-03-03 14:16:01 [RES ] testcommand - command testcommand successfuly completed, timeout 76
  
@@ -34,4 +41,3 @@
  
  2017-03-03 14:19:01 [RES ] testcommand2 - command testcommand2 successfuly completed, timeout 23
  
-</code>
