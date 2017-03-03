@@ -12,7 +12,7 @@
 2-й параметр id1,id2... должен быть уникальным, по нему отслеживается процесс
 
 Пример лога работы
-
+<code>
  2017-03-03 14:16:01 [RES ] testcommand - command testcommand successfuly completed, timeout 76
  2017-03-03 14:17:01 [RES ] testcommand4 - command testcommand4 successfuly completed, timeout 41
  2017-03-03 14:18:01 [WARN] testcommand3 - is already running
@@ -23,3 +23,4 @@
  2017-03-03 14:19:01 [WARN] testcommand4 - is already running
  2017-03-03 14:18:01 [RES ] testcommand4 - command testcommand4 successfuly completed, timeout 67
  2017-03-03 14:19:01 [RES ] testcommand2 - command testcommand2 successfuly completed, timeout 23
+</code>
